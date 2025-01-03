@@ -1,0 +1,22 @@
+# Ignorar pastas criadas pelo PyInstaller
+/dist/
+/build/
+
+# Ignorar arquivos gerados pelo PyInstaller
+*.spec
+
+# Ignorar pastas e arquivos do ambiente de desenvolvimento
+.idea/
+/__pycache__/
+/alarmes/
+
+
+# Ignorar arquivos JSON de configuração local
+alarms_config.json
+
+# Ignorar outros arquivos temporários ou de sistema
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
