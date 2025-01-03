@@ -1,63 +1,115 @@
 # ClosingTime
 
-ClosingTime é um aplicativo que ajuda você a configurar e gerenciar alarmes que anunciam eventos com áudios personalizados. Originalmente projetado para academias, pode ser usado em qualquer lugar que precise de avisos automáticos, como escritórios, escolas ou lojas.
+![Badge de Versão](https://img.shields.io/badge/vers%C3%A3o-0.1.0-blue)
+![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 
-## Funcionalidades
+**ClosingTime** é um aplicativo de alarmes com notificações personalizadas. Ele foi projetado para auxiliar academias, lojas e outros locais a anunciarem horários importantes, como fechamento, início de aulas ou qualquer evento agendado. É simples, personalizável e adaptável a outros cenários!
+## Índice
 
-- **Alarmes Personalizados**: Configure alarmes com áudios em formato `.mp3` ou `.wav`.
-- **Interface Intuitiva**: Interface moderna e fácil de usar.
-- **Inicialização com o Windows**: Inicia automaticamente junto com o sistema.
-- **Centralização de Arquivos**: Todos os áudios dos alarmes podem ser armazenados na pasta dedicada `Alarmes`.
-- **Configuração Persistente**: Salva as configurações localmente em um arquivo JSON.
-- **Notificações Visuais e Auditivas**: Anúncia eventos com mensagens e áudios.
+- [Descrição do Projeto](#descrição-do-projeto)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Como Usar](#como-usar)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
+- [Contato](#contato)
+
+## Descrição do Projeto
+
+Este projeto visa simplificar as operações diárias de uma academia, permitindo:
+
+- **Cadastro de Alunos**: Gerenciar informações pessoais e planos de matrícula.
+- **Controle de Pagamentos**: Monitorar pagamentos realizados e pendentes.
+- **Agendamento de Aulas**: Organizar horários de aulas e treinos personalizados.
+
+## Tecnologias Utilizadas
+
+- **Python**: Linguagem principal.
+- **PyInstaller**: Para criar o executável.
+- **ttkbootstrap**: Para criar uma interface gráfica moderna.
+- **Pygame**: Para reprodução de áudio.
+- **Pystray**: Para gerenciamento do ícone na bandeja do sistema
+
+ ## Pré-requisitos
+- Python 3.12 ou superior.
+- Dependências listadas no requirements.txt:
+
+   ```bash
+    pip install -r requirements.txt
+
+## Instalação
+
+1. **Clone o repositório**:
+
+   ```bash
+    git clone https://github.com/TalisDuarte007/ClosingTime-.git
+    cd ClosingTime-
+
+
+2. **Crie o Executável: Certifique-se de que o PyInstaller está instalado:**:
+
+    ```bash
+    pip install pyinstaller
+    pyinstaller --onefile --noconsole alarme.py
+
+    O executável estará na pasta dist/.
+
+
+3. **Configure a Pasta de Alarmes:**:
+
+    O aplicativo cria automaticamente uma pasta chamada Alarmes na raiz do executável para que você organize os arquivos de áudio usados nos alarmes.
+
 
 ## Como Usar
 
-1. **Baixe e Execute o App**:
-   - Baixe o executável da área de "Releases" no [repositório do GitHub](https://github.com/TalisDuarte007/ClosingTime-/releases).
-   - Ao executar, uma pasta chamada `Alarmes` será criada automaticamente na mesma localização do executável.
+    Adicione Alarmes:
 
-2. **Adicione Alarmes**:
-   - Clique no botão **Adicionar Alarme**.
-   - Escolha o horário e selecione o arquivo de áudio desejado.
+1. Abra o aplicativo.
+-    Clique em "Adicionar Alarme".
+-    Escolha um horário e selecione o arquivo de áudio desejado.
 
-3. **Verifique e Gerencie**:
-   - Clique em **Verificar Alarmes** para listar os alarmes configurados.
-   - Exclua qualquer alarme clicando sobre ele e selecionando **Deletar Alarme**.
+2. Verifique ou Delete Alarmes:
 
-4. **Personalize os Áudios**:
-   - Coloque seus arquivos `.mp3` ou `.wav` na pasta `Alarmes` para organização.
+-    Clique em "Verificar Alarmes" para visualizar os alarmes configurados.
+-    Selecione e delete alarmes conforme necessário.
 
-## Tecnologias Usadas
+3. Minimizar para Bandeja:
 
-- **Python**: Linguagem principal do projeto.
-- **Tkinter com ttkbootstrap**: Interface gráfica moderna.
-- **PyInstaller**: Empacotamento do app em um executável.
-- **pygame**: Reprodução de áudio.
-- **pystray**: Gerenciamento de ícone na bandeja do sistema.
-
-## Requisitos
-
-- **Sistema Operacional**: Windows 10 ou superior.
-- **Python 3.12** (caso você esteja rodando o código-fonte diretamente).
+-    Feche ou minimize o aplicativo para mantê-lo funcionando na bandeja do sistema.
+-    Clique com o botão direito no ícone da bandeja para restaurar ou fechar.
 
 ## Contribuição
 
-1. Faça um fork do repositório.
-2. Crie um branch para sua feature ou correção: `git checkout -b minha-feature`.
-3. Commit suas alterações: `git commit -m "Adiciona minha feature"`.
-4. Faça o push para o branch: `git push origin minha-feature`.
-5. Abra um Pull Request.
+    Contribuições são bem-vindas! Siga os passos abaixo:
+
+1. Fork o Repositório.
+
+2. Crie um Branch:
+
+    ```bash
+    git checkout -b minha-nova-funcionalidade
+
+3. Faça suas Alterações.
+
+4. Faça o Commit:
+    ```bash
+    git commit -m "Adiciona nova funcionalidade"
+
+5. Envie as Alterações:
+    ```bash
+    git push origin minha-nova-funcionalidade
+
+6. Crie um Pull Request.
+
 
 ## Licença
 
-Este projeto é licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a Licença MIT. Para mais detalhes, consulte o arquivo LICENSE.
 
-## Autor
+## Contato
 
-Desenvolvido por [Talis Duarte](https://github.com/TalisDuarte007).
+Nome: Talis Duarte
+E-mail: tcd07@hotmail.com
 
----
-
-Para perguntas ou sugestões, abra uma [Issue](https://github.com/TalisDuarte007/ClosingTime-/issues) no repositório.
-
+Este é um README provisório para o projeto "ClosingTime". À medida que o desenvolvimento avança, mais detalhes e instruções serão adicionados.
