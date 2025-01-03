@@ -8,7 +8,7 @@
 # Ignorar pastas e arquivos do ambiente de desenvolvimento
 .idea/
 /__pycache__/
-/alarmes/
+/Alarmes/
 
 
 # Ignorar arquivos JSON de configuração local

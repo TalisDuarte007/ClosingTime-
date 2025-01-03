@@ -9,6 +9,7 @@ from pystray import Icon, Menu, MenuItem
 from PIL import Image, ImageDraw
 
 from add_to_startup import add_to_startup
+from create_alarms_folder import create_alarms_folder
 
 # Arquivo para salvar as configurações
 CONFIG_FILE = "alarms_config.json"
@@ -234,4 +235,5 @@ threading.Thread(target=check_alarms, daemon=True).start()
 
 # Executa a interface
 add_to_startup()
+create_alarms_folder()
 root.mainloop()
