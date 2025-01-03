@@ -234,6 +234,8 @@ show_frame(main_frame)
 threading.Thread(target=check_alarms, daemon=True).start()
 
 # Executa a interface
-add_to_startup()
-create_alarms_folder()
-root.mainloop()
+if __name__ == "__main__":
+    alarms_folder = create_alarms_folder()  # Garante que a pasta exista
+    add_to_startup()  # Adiciona o aplicativo à inicialização
+    root.mainloop()  # Inicia a interface
+

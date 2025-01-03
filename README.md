@@ -1,11 +1,12 @@
 # ClosingTime
 
-![Badge de Versão](https://img.shields.io/badge/vers%C3%A3o-0.1.0-blue)
-![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Badge de Versão](https://img.shields.io/badge/vers%C3%A3o-1.0.0-blue)
+![Status do Projeto](https://img.shields.io/badge/status-vers%C3%A3o%20beta-blue)
 
 **ClosingTime** é um aplicativo de alarmes com notificações personalizadas. Ele foi projetado para auxiliar academias, lojas e outros locais a anunciarem horários importantes, como fechamento, início de aulas ou qualquer evento agendado. É simples, personalizável e adaptável a outros cenários!
 ## Índice
 
+- [Download](#Download)
 - [Descrição do Projeto](#descrição-do-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Pré-requisitos](#pré-requisitos)
@@ -15,13 +16,13 @@
 - [Licença](#licença)
 - [Contato](#contato)
 
+## Download
+   Baixe a última versão do aplicativo aqui: 
+   [![Download](http://img.shields.io/badge/Download-v1.0.0-blue)](https://github.com/TalisDuarte007/ClosingTime-/releases)
+
 ## Descrição do Projeto
 
-Este projeto visa simplificar as operações diárias de uma academia, permitindo:
-
-- **Cadastro de Alunos**: Gerenciar informações pessoais e planos de matrícula.
-- **Controle de Pagamentos**: Monitorar pagamentos realizados e pendentes.
-- **Agendamento de Aulas**: Organizar horários de aulas e treinos personalizados.
+   Este projeto visa simplificar as operações diárias em pequenas empresas, permitindo gerenciar alarmes incluindo sons para gerenciar horarios de fechamento ou pequenos anuncios internos.
 
 ## Tecnologias Utilizadas
 
@@ -63,7 +64,7 @@ Este projeto visa simplificar as operações diárias de uma academia, permitind
 
 ## Como Usar
 
-    Adicione Alarmes:
+Adicione Alarmes:
 
 1. Abra o aplicativo.
 -    Clique em "Adicionar Alarme".
@@ -81,7 +82,7 @@ Este projeto visa simplificar as operações diárias de uma academia, permitind
 
 ## Contribuição
 
-    Contribuições são bem-vindas! Siga os passos abaixo:
+Contribuições são bem-vindas! Siga os passos abaixo:
 
 1. Fork o Repositório.
 

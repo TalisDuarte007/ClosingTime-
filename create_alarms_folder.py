@@ -1,11 +1,14 @@
 import os
-import sys  # Import necessário
+import sys
 
 
 def create_alarms_folder():
-    """Cria a pasta 'Alarmes' na mesma localização do executável, se não existir."""
-    # Obter o caminho da pasta onde o executável está rodando
-    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+    """Cria a pasta 'Alarmes' na mesma localização do executável ou script."""
+    # Obter o caminho base do executável ou script
+    if getattr(sys, 'frozen', False):  # Executável gerado pelo PyInstaller
+        base_path = os.path.dirname(sys.executable)
+    else:  # Script Python em execução
+        base_path = os.path.dirname(os.path.abspath(__file__))
 
     # Caminho completo da pasta Alarmes
     alarms_folder = os.path.join(base_path, "Alarmes")
