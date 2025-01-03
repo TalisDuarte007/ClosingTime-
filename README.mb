@@ -1,0 +1,63 @@
+# ClosingTime
+
+ClosingTime é um aplicativo que ajuda você a configurar e gerenciar alarmes que anunciam eventos com áudios personalizados. Originalmente projetado para academias, pode ser usado em qualquer lugar que precise de avisos automáticos, como escritórios, escolas ou lojas.
+
+## Funcionalidades
+
+- **Alarmes Personalizados**: Configure alarmes com áudios em formato `.mp3` ou `.wav`.
+- **Interface Intuitiva**: Interface moderna e fácil de usar.
+- **Inicialização com o Windows**: Inicia automaticamente junto com o sistema.
+- **Centralização de Arquivos**: Todos os áudios dos alarmes podem ser armazenados na pasta dedicada `Alarmes`.
+- **Configuração Persistente**: Salva as configurações localmente em um arquivo JSON.
+- **Notificações Visuais e Auditivas**: Anúncia eventos com mensagens e áudios.
+
+## Como Usar
+
+1. **Baixe e Execute o App**:
+   - Baixe o executável da área de "Releases" no [repositório do GitHub](https://github.com/TalisDuarte007/ClosingTime-/releases).
+   - Ao executar, uma pasta chamada `Alarmes` será criada automaticamente na mesma localização do executável.
+
+2. **Adicione Alarmes**:
+   - Clique no botão **Adicionar Alarme**.
+   - Escolha o horário e selecione o arquivo de áudio desejado.
+
+3. **Verifique e Gerencie**:
+   - Clique em **Verificar Alarmes** para listar os alarmes configurados.
+   - Exclua qualquer alarme clicando sobre ele e selecionando **Deletar Alarme**.
+
+4. **Personalize os Áudios**:
+   - Coloque seus arquivos `.mp3` ou `.wav` na pasta `Alarmes` para organização.
+
+## Tecnologias Usadas
+
+- **Python**: Linguagem principal do projeto.
+- **Tkinter com ttkbootstrap**: Interface gráfica moderna.
+- **PyInstaller**: Empacotamento do app em um executável.
+- **pygame**: Reprodução de áudio.
+- **pystray**: Gerenciamento de ícone na bandeja do sistema.
+
+## Requisitos
+
+- **Sistema Operacional**: Windows 10 ou superior.
+- **Python 3.12** (caso você esteja rodando o código-fonte diretamente).
+
+## Contribuição
+
+1. Faça um fork do repositório.
+2. Crie um branch para sua feature ou correção: `git checkout -b minha-feature`.
+3. Commit suas alterações: `git commit -m "Adiciona minha feature"`.
+4. Faça o push para o branch: `git push origin minha-feature`.
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto é licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Autor
+
+Desenvolvido por [Talis Duarte](https://github.com/TalisDuarte007).
+
+---
+
+Para perguntas ou sugestões, abra uma [Issue](https://github.com/TalisDuarte007/ClosingTime-/issues) no repositório.
+
