@@ -123,7 +123,7 @@ def add_alarm():
     alarms[time_input] = audio_path
     save_config(alarms)
     messagebox.showinfo("Sucesso", f"Alarme configurado para {time_input}!")
-    show_frame(main_frame)  # Retorna à tela principal
+    #show_frame(main_frame)  # Retorna à tela principal
 
 # Função para deletar alarme selecionado
 def delete_alarm():
@@ -153,7 +153,7 @@ alarms = load_config()
 
 # Interface gráfica principal
 root = ttk.Window(themename="darkly")
-root.title("Alarmes para Academia")
+root.title("ClosingTime Alarme")
 root.geometry("400x400")
 
 # Configuração para centralizar todos os elementos na janela
@@ -174,7 +174,7 @@ for frame in (main_frame, add_alarm_frame, view_alarms_frame):
     frame.grid(row=0, column=0, sticky="nsew")  # Centraliza os frames
 
 # Tela principal
-main_label = ttk.Label(main_frame, text="Alarmes para Academia", font=("Arial", 16), anchor="center")
+main_label = ttk.Label(main_frame, text="ClosingTime", font=("Arial", 16), anchor="center")
 main_label.grid(row=1, column=0, pady=(20, 10), columnspan=2)  # Alterei a linha para 1
 
 add_button = ttk.Button(main_frame, text="Adicionar Alarme", bootstyle="success", command=lambda: show_frame(add_alarm_frame))
@@ -198,7 +198,7 @@ time_label.grid(row=2, column=0, pady=(10, 5))
 time_entry = ttk.Entry(add_alarm_frame, width=10)
 time_entry.grid(row=2, column=1, pady=(10, 5))
 
-save_button = ttk.Button(add_alarm_frame, text="Salvar Alarme", bootstyle="success", command=add_alarm)
+save_button = ttk.Button(add_alarm_frame, text="Adicionar Novo Alarme", bootstyle="success", command=add_alarm)
 save_button.grid(row=3, column=0, pady=(5, 10), columnspan=2)
 
 back_button_add = ttk.Button(add_alarm_frame, text="Voltar", bootstyle="secondary", command=lambda: show_frame(main_frame))
