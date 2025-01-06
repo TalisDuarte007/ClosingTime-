@@ -1,7 +1,8 @@
 import os
 import sys
-import winshell
+
 from win32com.client import Dispatch
+
 
 def add_to_startup():
     """Adiciona o aplicativo à inicialização do Windows."""
